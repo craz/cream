@@ -1,0 +1,29 @@
+.container.container--profile {
+
+    @media (max-width: 1100px) {
+      .breadcrumbs {
+        padding: 20px 14px 0 14px;
+      }
+  
+      .content {
+        padding: 0 14px;
+      }
+    }
+    .content {
+        margin-top: 40px;
+        padding-left: 14px;
+        margin-bottom: 40px;
+        @media (min-width: 1100px) {
+          margin-top: -200px;
+          padding: 0;
+        }
+        @media (min-width: 769px) and (max-width: 1099px) {
+          margin-top: -318px;
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+        @media (max-width: 768px) {
+          margin-top: 5px;
+        }
+    }
+}
