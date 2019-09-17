@@ -25,7 +25,7 @@ class MainPageController {
     initPopupCategories() {
         const buttonPopupCategories = document.getElementById('js-popupCategories');
         const popupCategoriesContent = document.getElementById('js-popupCategoriesContent');
-        buttonPopupCategories.addEventListener('click', () => popupCategoriesContent.style.display = 'block');
+        buttonPopupCategories.addEventListener('click', () => { popupCategoriesContent.style.display = 'block'; });
         tippy(buttonPopupCategories, {
             content: popupCategoriesContent,
             arrow: true,

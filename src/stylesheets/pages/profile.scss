@@ -1,29 +1,52 @@
-.container.container--profile {
-
-    @media (max-width: 1100px) {
-      .breadcrumbs {
-        padding: 20px 14px 0 14px;
-      }
-  
-      .content {
-        padding: 0 14px;
-      }
+.profile {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: "profileNav profileInfo" "profileSpace profileChangePassword";
+    grid-gap: 20px;
+    &-nav {
+        grid-area: profileNav;
+        background-color: rgba(229, 229, 236, 0.2);
+        padding: 40px;
+        &__ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        &__li {
+            padding-bottom: 40px;
+        }
+        &__link {
+            font-family: Gilroy;
+            font-size: 20px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: #b2b2b2;
+            &--active {
+                color: #000;
+                font-weight: bold;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: url('../../static/images/svg/iconset/ic-10-chevron_2.svg');
+                    width: 10px;
+                    height: 10px;
+                    transform: translate(-20px, 10px);
+                }
+            }
+        }
     }
-    .content {
-        margin-top: 40px;
-        padding-left: 14px;
-        margin-bottom: 40px;
-        @media (min-width: 1100px) {
-          margin-top: -200px;
-          padding: 0;
-        }
-        @media (min-width: 769px) and (max-width: 1099px) {
-          margin-top: -318px;
-          padding-left: 14px;
-          padding-right: 14px;
-        }
-        @media (max-width: 768px) {
-          margin-top: 5px;
-        }
+    &-info {
+        grid-area: profileInfo;
+        height: 550px;
+        background-color: rgba(229, 229, 236, 0.2);
+    }
+    &-change-password {
+        grid-area: profileChangePassword;
+        height: 240px;
+        background-color: rgba(229, 229, 236, 0.2);
+    }
+    &-space {
+        grid-area: profileSpace;
     }
 }

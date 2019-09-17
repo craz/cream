@@ -14,7 +14,8 @@ class ProfileController {
     }
 
     bind() {
-
+        this.container.querySelectorAll('.js-profile-nav')
+            .forEach(item => item.addEventListener('click', e => this.toggleMenu(e)));
     }
 
     init() {
