@@ -25,7 +25,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "glob": "^7.1.4",
     "history.js": "^1.8.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "node-sass": "^4.5.2",
     "postcss-loader": "^2.0.5",
     "progress-bar-webpack-plugin": "^1.10.0",
