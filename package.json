@@ -38,7 +38,7 @@
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-scss": "^3.10.0",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "tingle.js": "^0.15.1",
     "tippy.js": "^4.3.5"
   },
